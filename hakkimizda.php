@@ -1,0 +1,332 @@
+<?php include 'header.php'; ?>
+
+
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-color: #fdfaf5;
+    color: #0f1a2b;
+  }
+
+  section {
+    width: 100vw;
+    padding: 5vh 6vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #bfa144;
+    margin-bottom: 4vh;
+  }
+
+  .hero {
+    height: 100vh;
+    background: url('anasayfa/resepsiyon.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 26, 43, 0.6);
+  }
+
+  .hero-content {
+    position: relative;
+    color: #fdfaf5;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #e0c063;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
+
+  .split-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .split-text, .split-image {
+    width: 50vw;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2vw;
+  }
+
+  .split-text p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+    text-align: left;
+    color: #1f3556;
+    max-width: 100%;
+  }
+
+  .split-image img {
+    max-width: 100%;
+    max-height: 60vh;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .founder-text {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #1f3556;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .founder-text strong {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .service-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+
+  .service-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-box h3 {
+    color: #1f3556;
+    margin-bottom: 1rem;
+  }
+
+  .service-box img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .cta {
+    background: linear-gradient(to right, #0f1a2b, #1f3556);
+    color: #fff;
+    padding: 5vh 4vw;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .cta h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #f1c40f;
+    margin-bottom: 1rem;
+  }
+
+  .cta p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .contact-form button {
+    background-color: #e0c063;
+    color: #0f1a2b;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #f1c40f;
+    color: #fff;
+  }
+
+  @media(max-width: 768px) {
+    .split-section {
+      flex-direction: column;
+    }
+
+    .split-text, .split-image {
+      width: 90vw;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .split-text p,
+    .founder-text {
+      text-align: center;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+
+
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hakkımızda</h1>
+    <p>Geleceği inşa eden vizyonumuzla; güvenli, modern ve sürdürülebilir yapılar sunuyoruz.</p>
+  </div>
+</section>
+
+<!-- Biz Kimiz -->
+<section>
+  <h2 class="section-title">Mora İnşaat Kimdir?</h2>
+  <div class="split-section">
+    <div class="split-text">
+      <p>
+        2016 yılında kurulan Mora İnşaat, kısa sürede konut, ticari alan ve sosyal yaşam projelerinde sektörün güvenilir markalarından biri haline geldi. Yüksek kalite standartları, yenilikçi mimari anlayışı ve çevreye duyarlı yaklaşımıyla geleceğin şehirlerini inşa etmeyi amaçlıyor.<br><br>
+        Türkiye'nin dört bir yanında hayata geçirdiğimiz projelerle, sadece yapı değil, huzurlu ve prestijli yaşam alanları sunuyoruz.
+      </p>
+    </div>
+    <div class="split-image">
+      <img src="anasayfa/morainsaatlogo.png" alt="Mora İnşaat Logo">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Kurucudan Mesaj -->
+<section>
+  <h2 class="section-title">Kurucudan Mesaj</h2>
+  <div class="split-section">
+    <div class="split-image">
+      <img src="resimler/boss.ico" alt="Kurucu">
+    </div>
+    <div class="split-text">
+      <div class="founder-text">
+        <p>
+          “Mora İnşaat’ı kurarken hayalimiz, güvenli ve modern şehirler inşa etmekti. Bugün baktığımızda, bu hayali yaşayan binlerce aile var. Her yapımızda güveni, kaliteyi ve estetiği birleştiriyoruz.”
+        </p>
+        <strong>– Mehmet Fırat, Kurucu & CEO</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Değerler -->
+<section class="section values">
+  <h2 class="section-title">Temel Değerlerimiz</h2>
+  <div class="services-grid">
+    <div class="service-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="kalite">
+      <h3>Kalite Odaklılık</h3>
+      <p>Tüm projelerimizde birinci sınıf malzeme ve işçilik kullanarak uzun ömürlü yapılar sunuyoruz.</p>
+    </div>
+    <div class="service-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3924/3924469.png" alt="vizyon">
+      <h3>Vizyoner Yaklaşım</h3>
+      <p>Geleceğin şehirlerini bugünden planlayarak, yenilikçi çözümler üretiyoruz.</p>
+    </div>
+    <div class="service-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="güven">
+      <h3>Güven</h3>
+      <p>Müşteri memnuniyeti bizim için sadece bir hedef değil, temel prensibimizdir.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projeler -->
+<!-- Projeler -->
+<section class="section services">
+  <h2 class="section-title">Proje Alanlarımız</h2>
+  <p>Konut, ticari alanlar, villalar, rezidanslar ve sosyal yaşam alanları ile şehir yaşamına yön veriyoruz.</p>
+  <div class="services-grid">
+    <div class="service-box">
+      <i class="fas fa-building fa-3x" style="color:#2c3e50; margin-bottom: 10px;"></i>
+      <h3>Konut Projeleri</h3>
+      <p>Modern dairelerle şık ve konforlu yaşam alanları oluşturuyoruz.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-home fa-3x" style="color:#2c3e50; margin-bottom: 10px;"></i>
+      <h3>Villa Yerleşkeleri</h3>
+      <p>Geniş bahçeli, özel tasarımlı villa projeleriyle fark yaratıyoruz.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-briefcase fa-3x" style="color:#2c3e50; margin-bottom: 10px;"></i>
+      <h3>Ofis ve Ticari Alanlar</h3>
+      <p>İş dünyasının ihtiyaçlarına cevap veren fonksiyonel yapılar sunuyoruz.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  function adjustBodyPadding() {
+    const header = document.querySelector('.header');
+    if (header) {
+      const headerHeight = header.offsetHeight;
+      document.body.style.paddingTop = headerHeight + 'px';
+    }
+  }
+
+  // Sayfa yüklendiğinde ve pencere yeniden boyutlandığında çalıştır
+  window.addEventListener('load', adjustBodyPadding);
+  window.addEventListener('resize', adjustBodyPadding);
+</script>
+
+<?php include 'footer.php'; ?>
