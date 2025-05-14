@@ -258,7 +258,7 @@ buttonEl.addEventListener('click', () => {
     <h3>MORA MANZARA</h3>
     <p>2024</p>
   </div>
-  </a>
+  </a>  
 </div>
 
 

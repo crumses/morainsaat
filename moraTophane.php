@@ -49,21 +49,7 @@
   <div class="galeri-item dis-mekan">
     <img src="Tophane/dis1.jpg" alt="Dış Mekan 1" onclick="openLightbox(0)">
   </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Tophane/dis2.jpg" alt="Dış Mekan 2" onclick="openLightbox(1)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Tophane/dis3.jpg" alt="Dış Mekan 3" onclick="openLightbox(2)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Tophane/dis4.jpg" alt="Dış Mekan 4" onclick="openLightbox(3)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Tophane/dis5.jpg" alt="Dış Mekan 5" onclick="openLightbox(4)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Tophane/dis6.jpg" alt="Dış Mekan 6" onclick="openLightbox(5)">
-  </div>
+ 
    <div class="galeri-item dis-mekan">
     <img src="Tophane/dis7.jpg" alt="Dış Mekan 7" onclick="openLightbox(6)">
   </div>
@@ -73,9 +59,7 @@
    <div class="galeri-item dis-mekan">
     <img src="Tophane/dis9.jpg" alt="Dış Mekan 9" onclick="openLightbox(8)">
   </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Tophane/dis10.jpg" alt="Dış Mekan 9" onclick="openLightbox(9)">
-  </div>
+
   <div class="galeri-item ic-mekan">
   <img src="Tophane/ic1.jpg" alt="İç Mekan 1" onclick="openLightbox(10)">
 </div>
@@ -137,23 +121,13 @@
   <img src="Tophane/ic20.jpg" alt="İç Mekan 20" onclick="openLightbox(29)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Tophane/ic21.jpg" alt="İç Mekan 21" onclick="openLightbox(30)">
-</div>
-<div class="galeri-item ic-mekan">
-  <img src="Tophane/ic22.jpg" alt="İç Mekan 22" onclick="openLightbox(31)">
-</div>
-<div class="galeri-item ic-mekan">
   <img src="Tophane/ic23.jpg" alt="İç Mekan 23" onclick="openLightbox(32)">
 </div>
-<div class="galeri-item ic-mekan">
-  <img src="Tophane/ic24.jpg" alt="İç Mekan 24" onclick="openLightbox(33)">
-</div>
+
 <div class="galeri-item ic-mekan">
   <img src="Tophane/ic25.jpg" alt="İç Mekan 25" onclick="openLightbox(34)">
 </div>
-<div class="galeri-item ic-mekan">
-  <img src="Tophane/ic26.jpg" alt="İç Mekan 26" onclick="openLightbox(35)">
-</div>
+
 <div class="galeri-item ic-mekan">
   <img src="Tophane/ic27.jpg" alt="İç Mekan 27" onclick="openLightbox(36)">
 </div>

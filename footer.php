@@ -31,7 +31,7 @@
               Çukurambar/Ankara</p>
       <p>Telefon: <br>+90 312 473 89 89
         </p>
-      <p>Email: <br>satis@morainsaat.com</p>
+      <p>Email: <br>info@morainsaat.com</p>
     </div>
   </div>
 
