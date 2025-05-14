@@ -1,4 +1,54 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mora İnşaat</title>
+  <link rel="stylesheet" href="style.css">
+
+<style>
+  .timeline-container h3,
+  .timeline-container p {
+    color: #000080 !important;
+  }
+</style>
+
+
+</head>
+<body>
+
+
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="resimler/morainsaatlogo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li class="dropdown-parent">
+        <a href="#">Projeler</a>
+        <ul class="dropdown">
+          <li><a href="moramanzara.html">Mora Manzara</a></li>
+          <li><a href="morarezidans.html">Mora Rezidans</a></li>
+          <li><a href="moravilla.html">Mora Villaları</a></li>
+          <li><a href="moraplaza.html">Mora Plaza</a></li>
+          <li><a href="moratophane.html">Mora Tophane</a></li>
+        </ul>
+      </li>
+      <li><a href="hakkimizda.html">Kurumsal</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+<div id="top"></div>
+
 
 
 
@@ -10,21 +60,21 @@
 <img src="anasayfa/revizeMoraManzara.jpg" class="slide active" 
   data-title="Mora Manzara" 
   data-subtitle="Doğayla iç içe, lüks villa yaşamı"
-  data-url="moramanzara.php"
+  data-url="moramanzara.html"
   data-button="Detaylar">
   </div>
 <div class="slide-wrapper ">
 <img src="anasayfa/revizeMoraRezidans.jpg" class="slide " 
   data-title="Mora Rezidans" 
   data-subtitle="Modern mimarisiyle şehir yaşamına konfor katın"
-  data-url="morarezidans.php"
+  data-url="morarezidans.html"
   data-button="Detaylar">
 </div>
 <div class="slide-wrapper ">
 <img src="anasayfa/revizeMoraVilla.jpg" class="slide " 
   data-title="Mora Villaları" 
   data-subtitle="Özgür, geniş ve prestijli yaşam alanları"
-  data-url="moravilla.php"
+  data-url="moravilla.html"
   data-button="Detaylar">
 </div>
   <div class="slide-wrapper ">
@@ -218,7 +268,7 @@ buttonEl.addEventListener('click', () => {
 
 
 <!-- krolonojik sıralama projeler içinke  -->
-<a href="moratophane.php">
+<a href="moratophane.html">
 <div class="timeline-container">
   <div class="timeline-item">
     
@@ -227,7 +277,7 @@ buttonEl.addEventListener('click', () => {
     <p>2018</p>
   </div>
 </a>
-<a href="moraplaza.php">
+<a href="moraplaza.html">
   <div class="timeline-item">
     
     <img src="anasayfa/moraplaza.png" alt="Mora Plaza">
@@ -235,7 +285,7 @@ buttonEl.addEventListener('click', () => {
     <p>2019</p>
   </div>
   </a>
-<a href="moravilla.php">
+<a href="moravilla.html">
   <div class="timeline-item">
     
     <img src="anasayfa/moravilla.png" alt="Mora Villaları">
@@ -243,7 +293,7 @@ buttonEl.addEventListener('click', () => {
     <p>2020</p>
   </div>
   </a>
-<a href="morarezidans.php">
+<a href="morarezidans.html">
   <div class="timeline-item">
     
     <img src="anasayfa/morarezidans.png" alt="Mora Rezidans">
@@ -251,7 +301,7 @@ buttonEl.addEventListener('click', () => {
     <p>2022</p>
   </div>
   </a>
-<a href="moramanzara.php">
+<a href="moramanzara.html">
   <div class="timeline-item">
     
     <img src="anasayfa/moramanzara.png" alt="Mora Manzara">
@@ -263,7 +313,7 @@ buttonEl.addEventListener('click', () => {
 
 
 <!-- içerik 1 -1  -->
- <a href="moramanzara.php">
+ <a href="moramanzara.html">
 <div class="content" id="next-section">
   <div class="left">
     <img src="anasayfa/revizemoraManzara.jpg" alt="Mora Manzara">
@@ -285,7 +335,7 @@ buttonEl.addEventListener('click', () => {
 
 
 <!-- içerik 1 -2  -->
- <a href="morarezidans.php">
+ <a href="morarezidans.html">
 <div class="content reverse">
   <div class="left">
     <img src="anasayfa/revizemorarezidans.jpg" alt="Mora rezidans">
@@ -305,7 +355,7 @@ buttonEl.addEventListener('click', () => {
 
 
 <!-- içerik 1 -3  -->
- <a href="moravilla.php">
+ <a href="moravilla.html">
 <div class="content ">
   <div class="left">
     <img src="villalar/dis2.jpg" alt="Mora villa">
@@ -324,7 +374,7 @@ buttonEl.addEventListener('click', () => {
 </a>
 
             <!-- içerik 1 -4  -->
-             <a href="moraplaza.php">
+             <a href="moraplaza.html">
             <div class="content reverse">
             <div class="left">
                 <img src="plaza/dis1.jpeg" alt="Mora plaza">
@@ -342,7 +392,7 @@ buttonEl.addEventListener('click', () => {
             </div>  
             </a>
         <!-- içerik 1 -5  -->
-         <a href="moratophane.php">
+         <a href="moratophane.html">
         <div class="content">
         <div class="left">
             <img src="tophane/dis1.jpg" alt="Mora tophane">
@@ -470,5 +520,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section logo-section">
+      <div class="logo-content">
+        
+        <h3>Mora İnşaat</h3>
+        <p>Kalite ve Güvenin Adresi</p>
+        <img src="resimler/morainsaat.png" alt="Mora İnşaat Logo" class="footer-logo">
+      </div>
+    </div>
 
-<?php include 'footer.php'; ?>
+  
+    <div class="footer-section middle-section">
+      <h4>Hızlı Erişim</h4>
+      <ul>
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#kurumsal">Kurumsal</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section contact-section">
+      <h4>İletişim</h4>
+      <p>Adres: The Paragon Tower İş Merkezi
+              No: 3 Kat: 25 Ofis: 125
+
+              Çukurambar/Ankara</p>
+      <p>Telefon: <br>+90 312 473 89 89
+        </p>
+      <p>Email: <br>info@morainsaat.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mora İnşaat. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+
+
+<a href="#top" id="scrollToTopBtn" title="Yukarı Çık">⬆</a>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

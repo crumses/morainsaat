@@ -1,8 +1,52 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mora İnşaat</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="resimler/morainsaatlogo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li class="dropdown-parent">
+        <a href="#">Projeler</a>
+        <ul class="dropdown">
+          <li><a href="moramanzara.html">Mora Manzara</a></li>
+          <li><a href="morarezidans.html">Mora Rezidans</a></li>
+          <li><a href="moravilla.html">Mora Villaları</a></li>
+          <li><a href="moraplaza.html">Mora Plaza</a></li>
+          <li><a href="moratophane.html">Mora Tophane</a></li>
+        </ul>
+      </li>
+      <li><a href="hakkimizda.html">Kurumsal</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+<div id="top"></div>
+
 
 <!-- Hero Alanı -->
-<section class="galeri-hero" style="background-image: url('Rezidans/dis1.jpg');">
-  <h1>Mora Rezidans</h1>
+<section class="galeri-hero" style="background-image: url('plaza/dis1.jpeg');">
+  <h1>Mora plaza</h1>
 </section>
 
 <!-- Başlık ve Açıklama -->
@@ -47,110 +91,69 @@
 <!-- gallllllleri -->
 <div class="galeri-grid">
   <div class="galeri-item dis-mekan">
-    <img src="Rezidans/dis1.jpg" alt="Dış Mekan 1" onclick="openLightbox(0)">
+    <img src="plaza/dis1.jpeg" alt="Dış Mekan 1" onclick="openLightbox(0)">
   </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Rezidans/dis2.jpg" alt="Dış Mekan 2" onclick="openLightbox(1)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Rezidans/dis3.jpg" alt="Dış Mekan 3" onclick="openLightbox(2)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="Rezidans/dis4.jpg" alt="Dış Mekan 4" onclick="openLightbox(3)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="rezidans/dis5.jpg" alt="Dış Mekan 5" onclick="openLightbox(4)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="rezidans/dis6.jpg" alt="Dış Mekan 6" onclick="openLightbox(5)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="rezidans/dis7.jpg" alt="Dış Mekan 7" onclick="openLightbox(6)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="rezidans/dis8.jpg" alt="Dış Mekan 8" onclick="openLightbox(7)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="rezidans/dis9.jpg" alt="Dış Mekan 9" onclick="openLightbox(8)">
-  </div>
-   <div class="galeri-item dis-mekan">
-    <img src="rezidans/dis10.jpg" alt="Dış Mekan 9" onclick="openLightbox(9)">
-  </div>
-  <div class="galeri-item dis-mekan">
-  <img src="Rezidans/dis11.jpg" alt="Dış Mekan 10" onclick="openLightbox(10)">
-</div>
-<div class="galeri-item dis-mekan">
-  <img src="Rezidans/dis12.jpg" alt="Dış Mekan 11" onclick="openLightbox(11)">
-</div>
-<div class="galeri-item dis-mekan">
-  <img src="Rezidans/dis13.jpg" alt="Dış Mekan 12" onclick="openLightbox(12)">
+   <div class="galeri-item ic-mekan">
+    <img src="plaza/ic3.jpg" alt="İç Mekan 2" onclick="openLightbox(1)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic4.jpg" alt="İç Mekan 4" onclick="openLightbox(13)">
+  <img src="plaza/ic4.jpg" alt="İç Mekan 4" onclick="openLightbox(2)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic5.jpg" alt="İç Mekan 5" onclick="openLightbox(14)">
+  <img src="plaza/ic5.jpeg" alt="İç Mekan 5" onclick="openLightbox(3)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic6.jpg" alt="İç Mekan 6" onclick="openLightbox(15)">
+  <img src="plaza/ic6.jpg" alt="İç Mekan 6" onclick="openLightbox(4)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic7.jpg" alt="İç Mekan 7" onclick="openLightbox(16)">
+  <img src="plaza/ic7.jpg" alt="İç Mekan 7" onclick="openLightbox(5)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic8.jpg" alt="İç Mekan 8" onclick="openLightbox(17)">
+  <img src="plaza/ic8.jpg" alt="İç Mekan 8" onclick="openLightbox(6)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic9.jpg" alt="İç Mekan 9" onclick="openLightbox(18)">
+  <img src="plaza/ic9.jpg" alt="İç Mekan 9" onclick="openLightbox(7)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic10.jpg" alt="İç Mekan 10" onclick="openLightbox(19)">
+  <img src="plaza/ic10.jpg" alt="İç Mekan 10" onclick="openLightbox(8)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic11.jpg" alt="İç Mekan 11" onclick="openLightbox(20)">
+  <img src="plaza/ic11.jpg" alt="İç Mekan 11" onclick="openLightbox(9)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic12.jpg" alt="İç Mekan 12" onclick="openLightbox(21)">
+  <img src="plaza/ic12.jpg" alt="İç Mekan 12" onclick="openLightbox(10)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic13.jpg" alt="İç Mekan 13" onclick="openLightbox(22)">
+  <img src="plaza/ic13.jpg" alt="İç Mekan 13" onclick="openLightbox(11)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic14.jpg" alt="İç Mekan 14" onclick="openLightbox(23)">
+  <img src="plaza/ic14.jpg" alt="İç Mekan 14" onclick="openLightbox(12)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic15.jpg" alt="İç Mekan 15" onclick="openLightbox(24)">
+  <img src="plaza/ic15.jpg" alt="İç Mekan 15" onclick="openLightbox(13)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic16.jpg" alt="İç Mekan 16" onclick="openLightbox(25)">
+  <img src="plaza/ic16.jpg" alt="İç Mekan 16" onclick="openLightbox(14)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic17.jpg" alt="İç Mekan 17" onclick="openLightbox(26)">
+  <img src="plaza/ic17.jpg" alt="İç Mekan 17" onclick="openLightbox(15)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic18.jpg" alt="İç Mekan 18" onclick="openLightbox(27)">
+  <img src="plaza/ic18.jpg" alt="İç Mekan 18" onclick="openLightbox(16)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic19.jpg" alt="İç Mekan 19" onclick="openLightbox(28)">
+  <img src="plaza/ic19.jpg" alt="İç Mekan 19" onclick="openLightbox(17)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic20.jpg" alt="İç Mekan 20" onclick="openLightbox(29)">
+  <img src="plaza/ic20.jpg" alt="İç Mekan 20" onclick="openLightbox(18)">
 </div>
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic21.jpg" alt="İç Mekan 21" onclick="openLightbox(30)">
-</div>
+  <img src="plaza/ic1.jpg" alt="İç Mekan 25" onclick="openLightbox(20)">
+</div>   
 <div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic22.jpg" alt="İç Mekan 22" onclick="openLightbox(31)">
-</div>
-<div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic1.jpg" alt="İç Mekan 23" onclick="openLightbox(32)">
-</div>
-<div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic2.jpg" alt="İç Mekan 24" onclick="openLightbox(33)">
-</div>
-<div class="galeri-item ic-mekan">
-  <img src="Rezidans/ic3.jpg" alt="İç Mekan 25" onclick="openLightbox(34)">
-</div>  
+  <img src="plaza/ic2.jpg" alt="İç Mekan 25" onclick="openLightbox(21)">
+</div>   
+
 </div>
 
 <!-- Lightbox Modal -->
@@ -340,4 +343,61 @@
   window.addEventListener('resize', adjustBodyPadding);
 </script>
 
-<?php include 'footer.php'; ?>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section logo-section">
+      <div class="logo-content">
+        
+        <h3>Mora İnşaat</h3>
+        <p>Kalite ve Güvenin Adresi</p>
+        <img src="resimler/morainsaat.png" alt="Mora İnşaat Logo" class="footer-logo">
+      </div>
+    </div>
+
+  
+    <div class="footer-section middle-section">
+      <h4>Hızlı Erişim</h4>
+      <ul>
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#kurumsal">Kurumsal</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section contact-section">
+      <h4>İletişim</h4>
+      <p>Adres: The Paragon Tower İş Merkezi
+              No: 3 Kat: 25 Ofis: 125
+
+              Çukurambar/Ankara</p>
+      <p>Telefon: <br>+90 312 473 89 89
+        </p>
+      <p>Email: <br>info@morainsaat.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mora İnşaat. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+
+
+<a href="#top" id="scrollToTopBtn" title="Yukarı Çık">⬆</a>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
